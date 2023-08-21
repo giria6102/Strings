@@ -1,5 +1,5 @@
-i/p-g e e k s
-o/p-geeks
+i/p-"g e e k s"
+o/p-"geeks"
 
 class Solution
 {
