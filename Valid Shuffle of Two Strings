@@ -1,0 +1,40 @@
+int main() {
+     string s1;
+     cin>>s1;
+     cout<<endl;
+     string s2;
+      cin>>s2;
+      cout<<endl;
+      string res;
+      cin>>res;
+      int l1=s1.length();
+      int l2=s2.length();
+      int l3=res.length();
+      if(l3!=(l1+l2)){
+          cout<<"NO"<<endl;
+      }
+      int i=0;
+      int j=0;
+      int k=0;
+      int f=0;
+       while(k<l3){
+           if((i<l1)&&(s1[i]==res[k])){
+               i++;
+           }
+           else if((j<l2)&&(s2[j]==res[k])){
+               j++;
+           }
+           else{
+               f=1;
+               break;
+           }
+           k++;
+       }
+       if((i!=l1)||(j!=l2)){
+           cout<<"NO"<<endl;
+       }
+       else{
+           cout<<"YES"<<endl;
+       }
+    return 0;
+}
